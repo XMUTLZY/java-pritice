@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] arr = new int[]{ 6, 4, 9, 5, 10, 1, 3, 7, 8, 2};
-        //冒泡排序
+        //选择排序
         System.out.println(Arrays.toString(ChooseSort.chooseSort(arr)));
         //插入排序
         System.out.println(Arrays.toString(InsertSort.insertSort(arr)));
