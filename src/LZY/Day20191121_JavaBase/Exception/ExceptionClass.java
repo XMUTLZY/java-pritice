@@ -23,7 +23,7 @@ public class ExceptionClass {
         } catch (Exception e) {
             /**
              *  如果捕获到对应的异常类型，则执行catch块内部的语句
-             *  注:一个try至少有一个catch
+             *  注:try后面必须跟上catch或finally
              */
         } finally {
             /**
