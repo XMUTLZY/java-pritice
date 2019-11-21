@@ -5,6 +5,7 @@ package LZY.Day20191107_Sort;
  * 比较次数:(N-1)+(N-2)+...+(1)
  * 最坏情况交换次数是N
  * 特点：数据移动次数是最小的
+ * 时间复杂度:平均、最佳、最差 均为O(n2)
  */
 public class ChooseSort {
     public static int[] chooseSort(int[] arr) {
