@@ -1,4 +1,4 @@
-package LY.Day20191121_DataStructure.Day20191121_HashTable;
+package LY.Day20191121_DataStructure.Day20191121_LinkedList;
 
 
 /**
@@ -6,7 +6,7 @@ package LY.Day20191121_DataStructure.Day20191121_HashTable;
  * @Date: 2019/11/21 16:20
  * @Description: 链表基本操作
  */
-public class HashTableDemo {
+public class LinkedListDemo {
     public static void main(String[] args) {
         Node head = new Node();
         Node index = head;
