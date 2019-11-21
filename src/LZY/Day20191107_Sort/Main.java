@@ -3,7 +3,7 @@ package LZY.Day20191107_Sort;
 import java.util.Arrays;
 
 /**
- * 十大排序算法比较 main函数
+ * 十大排序算法比较 main函数 测试
  */
 public class Main {
     public static void main(String[] args) {
