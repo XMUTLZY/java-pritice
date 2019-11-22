@@ -6,7 +6,7 @@ package LZY.Day20191121_JavaBase.Exception;
  * Throwable是异常(Exception)和错误(Error)的超类  Throwable类位于java.lang;包下
  *
  * 异常(Exception)又分为   运行时异常(RunTimeException)/非受检异常  和  检查异常(CheckedException)/受检异常
- * 运行异常：NullPointerExcetion、IndexOutOfBoundsExcetion...
+ * 运行异常：NullPointerExcetion、IndexOutOfBoundsExcetion...出现这个异常都是程序员的问题，代码有误，
  * 检查异常：IOException、SqlException....程序运行时必须被捕获的异常 使用try catch  或 throws关键字
  *
  * 错误(Error)这里不详细介绍, 最典型的错误就是OutOfMemoryError(内存溢出),在jvm底层会经常见到
@@ -19,6 +19,10 @@ public class ExceptionClass {
         try {
             /**
              * try内部执行可能发生受检异常的语句
+             */
+        } catch (NullPointerException e) {
+            /**
+             * 可以添加多个catch块  注意：catch块中的参数类型 子类必须排在最上面
              */
         } catch (Exception e) {
             /**
