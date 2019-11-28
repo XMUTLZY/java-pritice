@@ -5,6 +5,8 @@ package LZY.Day20191119_JVM;
  * -XX:+<option>打开选项
  * -XX:-<option>关闭选项
  * -XX:<option>=value 赋值
+ *
+ * Child类被加载，并没有初始化     其父类完成了加载和初始化
  */
 public class JVM {
     public static void main(String[] args) {

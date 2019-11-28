@@ -1,4 +1,4 @@
-package LZY.Day20191125_DesignPattern.CreateType.SingleTon;
+package LZY.Day20191125_DesignPattern.CreateType.SingleTonPattern;
 
 /**
  * @单例模式 -创建型模式 方法2

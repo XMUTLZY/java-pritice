@@ -1,4 +1,4 @@
-package LZY.Day20191125_DesignPattern.CreateType.SingleTon;
+package LZY.Day20191125_DesignPattern.CreateType.SingleTonPattern;
 
 public class Main {
     public static void main(String[] args) {
