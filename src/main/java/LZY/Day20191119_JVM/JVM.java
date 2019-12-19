@@ -1,5 +1,7 @@
 package LZY.Day20191119_JVM;
 
+import java.awt.print.Pageable;
+
 /**
  * -XX:+TraceClassLoading: 用于追踪类的加载信息
  * -XX:+<option>打开选项
@@ -19,7 +21,7 @@ class Parent{
         System.out.println("class: Parent is init");
     }
 }
-class Child {
+class Child extends Object{
 //    public static String str = "child";
     static {
         System.out.println("class: Child is init");
