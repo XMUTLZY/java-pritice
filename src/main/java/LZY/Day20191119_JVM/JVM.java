@@ -10,7 +10,7 @@ package LZY.Day20191119_JVM;
  */
 public class JVM {
     public static void main(String[] args) {
-        System.out.println("test");
+        System.out.println();
     }
 }
 class Parent{
@@ -19,7 +19,7 @@ class Parent{
         System.out.println("class: Parent is init");
     }
 }
-class Child extends Object{
+class Child {
 //    public static String str = "child";
     static {
         System.out.println("class: Child is init");
