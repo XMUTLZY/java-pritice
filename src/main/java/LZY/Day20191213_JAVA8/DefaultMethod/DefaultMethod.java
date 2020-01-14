@@ -1,4 +1,4 @@
-package LZY.Day20191213_JAVA8.First;
+package LZY.Day20191213_JAVA8.DefaultMethod;
 
 /**
  * @Title: Java8新特性——扩展方法
