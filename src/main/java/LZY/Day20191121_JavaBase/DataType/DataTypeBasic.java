@@ -14,4 +14,15 @@ public class DataTypeBasic {
      * @boolean：1位
      * @char：16位
      */
+    static byte a;
+    static short b;
+    static int c;
+    static long d;
+    static float e;
+    static double f;
+    static boolean g;
+    static char h;
+    public static void main(String[] args) {
+        System.out.println(a + " " + b + " " + c + " " + d + " " + e + " " + f + " " + g + " " + h);
+    }
 }
