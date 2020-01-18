@@ -47,7 +47,6 @@ public class Demo {
         if (integerList.stream().anyMatch(integer -> integer == 2)) {
             System.out.println("整型数组中存在2");
         }
-
         /**
          * 数值流操作
          */
