@@ -8,4 +8,12 @@ public class DoubleLinkList {
     public DoubleLinkList(int data) {
         this.data = data;
     }
+
+    public static void print(DoubleLinkList doubleLinkList) { //从根节点打印数据
+        System.out.println(doubleLinkList.data);
+        doubleLinkList = doubleLinkList.next;
+        if (doubleLinkList != null) {
+            print(doubleLinkList);
+        }
+    }
 }

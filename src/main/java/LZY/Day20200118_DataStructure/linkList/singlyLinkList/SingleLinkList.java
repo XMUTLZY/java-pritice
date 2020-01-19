@@ -7,4 +7,12 @@ public class SingleLinkList {
     public SingleLinkList(int data) {
         this.data = data;
     }
+
+    public static void print(SingleLinkList singleLinkList) { // 从根节点打印数据
+        System.out.println(singleLinkList.data);
+        singleLinkList = singleLinkList.next;
+        if (singleLinkList != null) {
+            print(singleLinkList);
+        }
+    }
 }
