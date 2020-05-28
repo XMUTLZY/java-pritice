@@ -18,7 +18,7 @@ public class Solution {
 //        SingleLinkList.print(solution.getSingleLinkListByK(9, singleLinkListHead)); //获取倒数第K个节点
 //        SingleLinkList.print(solution.getMiddle(singleLinkListHead)); //获取中间节点
 //        solution.print(singleLinkListHead);//从尾到头打印单链表
-        SingleLinkList.print(solution.sort(singleLinkListHead, singleLinkListHead2));
+//        SingleLinkList.print(solution.sort(singleLinkListHead, singleLinkListHead2));//两个有序链表的排序
 
         DoubleLinkList doubleLinkList = new DoubleLinkList(arr[0]); //头结点
         solution.initDoubleLinkList(doubleLinkList, arr);
@@ -151,22 +151,57 @@ public class Solution {
             result = head2;
             head2 = head2.next;
         }
+        result.next = null;
+        SingleLinkList temp = result;
         while (head1!= null && head2!= null) {
             if (head1.data<head2.data) {
-                result.next = head1;
+                temp.next = head1;
                 head1 = head1.next;
-                result = result.next;
+                temp = temp.next;
             } else {
-                result.next = head2;
+                temp.next = head2;
                 head2 = head2.next;
-                result = result.next;
+                temp = temp.next;
             }
+            temp.next = null;
         }
         if (head1!= null) {
-            result.next = head1;
+            temp.next = head1;
         } else {
-            result.next = head2;
+            temp.next = head2;
         }
         return result;
     }
+
+    //7. 判断一个单链表中是否有环
+    public boolean annular(SingleLinkList head) {
+        SingleLinkList head1 = head;
+        SingleLinkList head2 = head;
+        while (head1.next != null && head2.next != null) {
+            head1 = head1.next;
+            head2 = head2.next.next;
+            if (head1 == head2) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //8. 判断两个单链表是否相交
+    public boolean intersect(SingleLinkList head1, SingleLinkList head2) {
+        if (head1 == null || head2 == null) {
+            return false;
+        }
+        SingleLinkList temp1 = head1;
+        SingleLinkList temp2 = head2;
+        while (temp1.next != null) {
+            temp1 = temp1.next;
+        }
+        while (temp2.next != null) {
+            temp2 = temp2.next;
+        }
+        return temp1 == temp2;
+    }
+
+    //9. 求两个单链表相交的第一个节点
 }
