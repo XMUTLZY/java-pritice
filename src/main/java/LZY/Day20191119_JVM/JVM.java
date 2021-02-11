@@ -19,7 +19,7 @@ class Parent{
         System.out.println("class: Parent is init");
     }
 }
-class Child extends Parent{
+class Child extends Object{
 //    public static String str = "child";
     static {
         System.out.println("class: Child is init");
